@@ -1,0 +1,30 @@
+package javaprogramming_level2;
+
+import java.util.Scanner;
+
+public class QuotientRemainderCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Enter the dividend (first number): ");
+        int dividend = scanner.nextInt();
+
+        System.out.print("Enter the divisor (second number): ");
+        int divisor = scanner.nextInt();
+
+        if (divisor != 0) {
+            
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
+
+           
+            System.out.println("Quotient: " + quotient);
+            System.out.println("Remainder: " + remainder);
+        } else {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
+
+        scanner.close();
+    }
+}
