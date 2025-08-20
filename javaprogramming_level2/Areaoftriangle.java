@@ -12,7 +12,9 @@ public class Areaoftriangle {
     double area = (base * height) / 2;
     double inches = area * 2.54;
     System.out.println("Area of triangle in square inches: " + inches);
-    
+    System.out.println("Area of triangle in square centimeters: " + area);
+    scanner.close();
   }
+  
     
 }
